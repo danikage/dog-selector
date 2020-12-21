@@ -64,7 +64,7 @@ export default {
 
 <style lang="stylus">
 
-@import '../styles/variables.styl'
+// @import '../styles/variables.styl'
 
 .base-select
   &__hidden
@@ -77,7 +77,7 @@ export default {
     display flex
     background-color #fff
     font-size 1rem
-    height $input-height
+    height 3rem
     justify-content space-between
     padding 0 1rem
     width 100%
@@ -92,29 +92,29 @@ export default {
     box-shadow 0 0 3px #999
     display flex
     flex-direction column
-    max-height 8*$input-height
+    max-height 8 * 3rem
     overflow auto
     position absolute
-    top calc(100% - $input-height)
+    top calc(100% - 3rem)
     width 100%
   &__option
     background-color #fff
     border 0
     cursor pointer
     display block
-    flex 0 0 $input-height
+    flex 0 0 3rem
     width 100%
     &:hover
       background-color #eee
   &--small
     .base-select
       &__input
-        height $input-height-small
+        height 2rem
       &__list
-        max-height 8*$input-height-small
-        top calc(100% - $input-height-small)
+        max-height 8 * 2rem
+        top calc(100% - 2rem)
       &__option
-        flex 0 0 $input-height-small
+        flex 0 0 2rem
   &--inline
     .base-select
       &__label
